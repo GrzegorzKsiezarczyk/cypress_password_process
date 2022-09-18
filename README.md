@@ -7,3 +7,9 @@ QA Task Scenarious:
 In the project I used Page Object Model.
 
 All scenarious are in folder: cypress/integration/Test_scenarios
+
+
+Commands to use:
+npx cypress run --browser chrome --headed --no-exit  --spec cypress_code/cypress_code/cypress/integration/Test_scenarios/Dashboard_change_password.spec.js
+
+npx cypress run --browser chrome --headed --no-exit  --spec cypress_code/cypress_code/cypress/integration/Test_scenarios/Dashboard_change_password_demo_mode.spec.js
