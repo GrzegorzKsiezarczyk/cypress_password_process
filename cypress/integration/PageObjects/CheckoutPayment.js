@@ -29,7 +29,6 @@ class CheckoutPayment {
         //cy.get('.sc-dNLxif.jcChKh').contains('Charged')
         cy.get(selectors.Charged).contains('Charged').should('be.visible') .click()
 
-
     }
     Fully_refunded(){
         cy.get(selectors.Fully)
@@ -42,8 +41,7 @@ class CheckoutPayment {
     Not_Charged(){
         cy.get(selectors.Not_CH)
         .contains('Not charged')
-        .should('be.visible')
-        .click()
+        .should('be.visible').click()
 
     }
 }
