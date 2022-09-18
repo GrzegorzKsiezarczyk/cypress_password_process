@@ -1,3 +1,4 @@
 cypress/integration/PageObjects/CheckoutPayment.js
 cypress/videos/Test_scenarios/Dashboard_change_password_demo_mode.spec.js.mp4
 cypress/integration/PageObjects/CheckoutPayment.js
+cypress_code/cypress_code/node_modules
