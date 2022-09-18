@@ -40,6 +40,7 @@ class Dashboard_account{
                 
             } else {
               cy.log('Demo mode OFF')
+              cy.get(selectors.error_notification).should('not.be.visible')
               cy.get(selectors.error_pop_up).should('not.be.visible')
             }
           })
@@ -55,10 +56,12 @@ class Dashboard_account{
                     expect(server.status).to.eq(200)
                     expect(server.response).to.be.null
                 })
-              cy.get(selectors.error_pop_up).should('have.length', 1)
+            cy.get(selectors.error_pop_up).should('have.length', 1) //  When I will have 1 positive notifaction
 
             } else {
                 cy.log('Demo mode ON')
+                cy.get(selectors.error_notification).should('be.visible')
+
                 cy.get(selectors.error_pop_up).should('have.length', 3).should('be.visible')
                 cy.url().should('eq', 'https://demo.saleor.io/dashboard/staff/VXNlcjo1OQ%3D%3D?action=change-password')
                 assert.isNotOk('DEMO MODE','DEMO MODE is still ON')

@@ -13,7 +13,7 @@ export default{
     New_password_save_button: '[data-test-state=default]',
 
     error_pop_up: '[data-test=notification]',
-
+    error_notification: '[data-test-type="error"]'
     
 
     };
